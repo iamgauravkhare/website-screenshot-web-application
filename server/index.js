@@ -6,7 +6,12 @@ const { databaseConnection } = require("./configuration/database");
 const { cloudinaryConnection } = require("./configuration/cloudinary");
 const routes = require("./routes/routes");
 const PORT = process.env.PORT || 4000;
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://snap-site.vercel.app",
+  "https://snap-site-iamgauravkhare.vercel.app",
+  "https://snap-site-git-master-iamgauravkhare.vercel.app",
+];
 databaseConnection();
 cloudinaryConnection();
 app.use(

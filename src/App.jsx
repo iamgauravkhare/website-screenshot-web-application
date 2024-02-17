@@ -20,7 +20,7 @@ function App() {
     };
     try {
       const { data } = await axios.post(
-        "http://localhost:4500/api/v1/capture-screenshot",
+        "https://snap-site-server.onrender.com/api/v1/capture-screenshot",
         reqPayload
       );
       setData(data.payload);
